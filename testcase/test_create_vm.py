@@ -16,7 +16,6 @@ from login_page import LoginPage
 from vm_create_page import VmCreatePage
 
 
-
 class CreateVM(unittest.TestCase):
     '''
     创建云主机case
