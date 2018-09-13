@@ -23,7 +23,7 @@ class VmCreatePage(BasePage):
     search_button_loc = (By.XPATH, "//*[text()='搜索']")                         # 搜索按钮
     reset_button_loc = (By.XPATH, "//*[text()='重置']")                          # 重置按钮
     first_search_result_loc = (By.XPATH, "//tbody/tr[2]//span")                  # 所有搜索的第一个结果
-    
+
     # 基本信息
     name_input_loc = (By.XPATH, "//label[text()='云主机名称：']//..//input")
     vmname_input_loc = (By.XPATH, "//label[text()='VM Name：']//..//input")
@@ -37,7 +37,7 @@ class VmCreatePage(BasePage):
     applytime_time_loc = (By.XPATH, "//*[@id='inlineRadio2']//..//span")
     applytime_timefor_loc = (By.ID, '//*[@id="resource_instance_vm_limit_option2_unit"]')
     applytime_date_loc = (By.XPATH, "//*[@id='inlineRadio3']//..//span")
-    applytime_datefor_loc = (By.ID, '//*[@id="resource_instance_vm_limit_option3"]')  
+    applytime_datefor_loc = (By.ID, '//*[@id="resource_instance_vm_limit_option3"]')
     textarea_input_loc = (By.XPATH, "//textarea")                               # 备注
     # 配置信息
     az_loc = (By.XPATH, "//label[text()='可用分区：']//..//select")
@@ -134,10 +134,3 @@ class VmCreatePage(BasePage):
                 self.find_element(*self.applytime_datefor_loc).send_keys(item_value)
         elif item_type == '归属服务':
             self.item_click(item_type, item_value)
-        
-                
-
-
-
-    
-

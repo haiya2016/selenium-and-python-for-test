@@ -25,6 +25,7 @@ class HomepageCSC(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
         self.driver.set_window_size(1366, 768)
+        self.login_driver = LoginPage.login(self.driver, self.url, 'wjx', 'Admin123', 'ad')
         self.database = pymysql.connect(
             host='192.168.219.227',
             port=3306,
@@ -32,20 +33,9 @@ class HomepageCSC(unittest.TestCase):
             password='csc',
             db='csc')
 
-    def login(self):
-        '''
-        账号正常登录后返回浏览器给用例使用
-        '''
-        loginpage = LoginPage(self.driver, self.url, 'WinCloud统一认证平台')
-        loginpage.open()
-        loginpage.input_username('admin')
-        loginpage.input_password('1234567890')
-        loginpage.click_submit()
-        return self.driver
-
     def test_switch_dc(self):
         '''切换数据中心'''
-        homepage = HomePage(self.login(), self.url, 'WinCloud-CSC')
+        homepage = HomePage(self.login_driver, self.url)
         # 选择某个数据中心的数据
         homepage.dc_select('DC-PVC')
         print(homepage.dc_check())

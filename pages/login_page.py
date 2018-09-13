@@ -27,13 +27,11 @@ class LoginPage(BasePage):
     # # 调用page中的_open打开连接
     #     self._open(self.base_url, self.pagetitle)
     def input_username(self, username):
-        '''输入用户名：调用send_keys对象，输入用户名'''
-#        self.find_element(*self.username_loc).clear()
+        '''输入用户名'''
         self.find_element(*self.username_loc).send_keys(username)
 
     def input_password(self, password):
-        '''输入密码：调用send_keys对象，输入密码'''
-        # self.find_element(*self.password_loc).clear()
+        '''输入密码'''
         self.find_element(*self.password_loc).send_keys(password)
 
     def click_submit(self):
@@ -44,11 +42,26 @@ class LoginPage(BasePage):
         '''用户名或密码不合理时Tip框内容展示'''
         return self.find_element(*self.msg_loc).text
 
-    def swich_usertype(self):
+    def switch_usertype(self):
         '''切换为Ad用户登陆'''
         self.find_element(*self.usertype_ad_loc).click()
 
     def show_userid(self):
         '''登录成功页面中的用户ID查找'''
         return self.find_element(*self.userid_loc).text
+
+
+    @classmethod
+    def login(cls, driver, url, username, password, usertype='本地'):
+        '''
+        类方法：账号正常登录后返回浏览器给用例使用
+        '''
+        login = cls(driver, url)    # 初始化
+        login.open()
+        login.input_username(username)
+        login.input_password(password)
+        if usertype != '本地':
+            login.switch_usertype()
+        login.click_submit()
+        return login.driver
         

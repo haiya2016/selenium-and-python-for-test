@@ -7,7 +7,7 @@ Project: 首页模块的测试用例
 import unittest
 # import sys
 # import os
-import time
+# import time
 # import pymysql
 from selenium import webdriver
 from BeautifulReport import BeautifulReport
@@ -24,10 +24,13 @@ class CreateVM(unittest.TestCase):
 
     def setUp(self):
         self.url = 'https://192.168.219.227:8099/csc/index.html'
-        self.create_vm_url = 'https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1'
+        self.create_vm_url = f'{self.url}#pages/resources/instances/vms/vm_create?previousPage=1'
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
+        self.driver.set_page_load_timeout(60)
         self.driver.set_window_size(1366, 768)
+        # 调用LoginPage的类方法，直接获取一个已登录的浏览器
+        self.login_driver = LoginPage.login(self.driver, self.url, 'wjx', 'Admin123', 'ad')
         # self.database = pymysql.connect(
         #     host='192.168.219.227',
         #     port=3306,
@@ -35,25 +38,14 @@ class CreateVM(unittest.TestCase):
         #     password='csc',
         #     db='csc')
 
-    def login(self):
-        '''
-        账号正常登录后返回浏览器给用例使用
-        '''
-        loginpage = LoginPage(self.driver, self.url, 'WinCloud统一认证平台')
-        loginpage.open()
-        loginpage.input_username('admin')
-        loginpage.input_password('1234567890')
-        loginpage.click_submit()
-        return self.driver
 
     def test_create_vm(self):
         '''切换数据中心'''
-        vmcreatepage = VmCreatePage(self.login(), self.create_vm_url, 'WinCloud-CSC')
-        # time.sleep(3)
-        vmcreatepage.open()
-        time.sleep(3)
-        # 选择某个数据中心的数据
-        vmcreatepage.input_item('归属服务', 'zhh')
+        # 使用已登录的浏览器生成一个已登录的云主机创建页面的对象
+        vm_page = VmCreatePage(self.login_driver, self.create_vm_url)
+        vm_page.open()
+        # 填写归属服务
+        vm_page.input_item('归属服务', 'zhh')
         # time.sleep(5)
 
     def tearDown(self):
