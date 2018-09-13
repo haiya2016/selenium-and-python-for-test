@@ -5,15 +5,16 @@ Created on 2018-9-9
 Project: 首页模块的测试用例
 '''
 import unittest
-import sys
-import os
+# import sys
+# import os
 import time
 # import pymysql
 from selenium import webdriver
 from BeautifulReport import BeautifulReport
-sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
-from login_page import LoginPage
-from vm_create_page import VmCreatePage
+# sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
+from pages.login_page import LoginPage
+# from login_page import LoginPage
+from pages.vm_create_page import VmCreatePage
 
 
 class CreateVM(unittest.TestCase):

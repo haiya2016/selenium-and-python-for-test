@@ -6,7 +6,7 @@ Project:页面基本操作方法：如open，input_username，input_password，c
 '''
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from base_page import BasePage
+from pages.base_page import BasePage
 
 
 class HomePage(BasePage):

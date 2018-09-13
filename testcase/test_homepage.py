@@ -5,14 +5,14 @@ Created on 2018-9-9
 Project: 首页模块的测试用例
 '''
 import unittest
-import sys
-import os
+# import sys
+# import os
 import pymysql
 from selenium import webdriver
 from BeautifulReport import BeautifulReport
-sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
-from login_page import LoginPage
-from home_page import HomePage
+# sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
+from pages.login_page import LoginPage
+from pages.home_page import HomePage
 
 
 class HomepageCSC(unittest.TestCase):

@@ -6,7 +6,7 @@ Project:云主机创建页面
 '''
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from base_page import BasePage
+from pages.base_page import BasePage
 import time
 
 

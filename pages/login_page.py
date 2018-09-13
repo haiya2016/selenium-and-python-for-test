@@ -5,7 +5,7 @@ Created on 2018-9-9
 Project:页面基本操作方法：如open，input_username，input_password，click_submit
 '''
 from selenium.webdriver.common.by import By
-from base_page import BasePage
+from pages.base_page import BasePage
 
 class LoginPage(BasePage):
     '''
