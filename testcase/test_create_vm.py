@@ -7,13 +7,14 @@ Project: 首页模块的测试用例
 import unittest
 import sys
 import os
+import time
 # import pymysql
 from selenium import webdriver
 from BeautifulReport import BeautifulReport
 sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
 from login_page import LoginPage
 from vm_create_page import VmCreatePage
-import time
+
 
 
 class CreateVM(unittest.TestCase):
