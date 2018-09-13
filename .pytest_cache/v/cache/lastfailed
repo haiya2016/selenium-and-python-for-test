@@ -1,0 +1,4 @@
+{
+  "testcase/test_homepage.py": true,
+  "testcase/test_login.py": true
+}

@@ -1,0 +1,72 @@
+AIX:
+ AIX V5.3:
+  - AIX V5300
+ AIX V6.1:
+  - aix6.1
+  - AIX V6100
+  - AIX V610612
+ AIX V7.1:
+  - AIX V7100
+  - AIX V710105
+  - AIX V7103
+
+
+Windows:
+ Windows Server 2003:
+  - Microsoft Windows 7 (64 位)
+  - Microsoft Windows 7 旗舰版 
+  - Windows 7 (64-bit)
+  - Windows Server 2003 (64-bit)
+  - Windows Server 2003 R2 (32-bit)
+  - Windows Server 2003 R2 (64-bit)
+  - Windows Server 2008 R2 (64-bit)
+  - Microsoft Windows Server 2003 (64 位)
+  - Microsoft Windows Server 2003 Enterprise Edition
+  - Microsoft Windows Server 2003 Enterprise x64 Edition
+  - Microsoft Windows Server 2003 Standard Edition
+ Windows Server 2008:
+  - Microsoft Windows Server 2008 R2 Datacenter 
+  - Microsoft Windows Server 2008 R2 Enterprise 
+  - Microsoft Windows Server 2008 R2 Standard
+  - Microsoft Windows Server 2008 R2 (64 位)
+ Windows Server 2012:
+  - Microsoft Windows Server 2012 (64 位)
+  - Microsoft Windows Server Threshold (64 位)
+  - Microsoft Windows Server 2012 R2 Datacenter
+  - Microsoft Windows Server 2016 Essentials
+
+
+
+Linux:
+ Red Hat:
+  - HVM Red Hat Enterprise Linux 6 (64-bit)
+  - Red Hat Enterprise Linux 6 (64 位)
+  - Red Hat Enterprise Linux 6 (64-bit)
+  - Red Hat Enterprise Linux Server release 6.3 (Santiago)
+  - Red Hat Enterprise Linux Server release 6.4 (Santiago)
+  - Red Hat Enterprise Linux Server release 6.5 (Santiago)
+  - Red Hat Enterprise Linux Server release 5.5 for IBM Power
+  - Red Hat Enterprise Linux Server release 6.4 for IBM Power
+  - Red Hat Enterprise Linux 7 (64 位)
+  - Red Hat Enterprise Linux Server release 7.0 (Maipo)
+  - Red Hat Enterprise Linux Server release 7.1 (Maipo)
+  - Red Hat Enterprise Linux Server release 7.2 (Maipo)
+  - HVM Red Hat Enterprise Linux 7 (64-bit)
+ CentOS:
+  - CentOS release 6.5 (Final)
+  - CentOS release 6.8 (Final)
+  - HVM CentOS 6 (64-bit)
+  - CentOS 4/5/6/7 (64 位)
+  - CentOS 4.6 (32-bit)
+  - HVM CentOS 7 (64-bit)
+  - CentOS Linux release 7.2.1511 (Core)
+ Others:
+  - OTHERS
+  - 其他 Linux (64 位)
+  - Other install media
+  - Debian GNU/Linux 8.7 (jessie) 
+ SUSE:
+  - SUSE Linux Enterprise 12 (64 位)
+  - SUSE openSUSE (64 位)
+  - SUSE Linux Enterprise Server 11 SP1 for IBM Power
+  - SUSE Linux Enterprise Server 11 (x86_64)

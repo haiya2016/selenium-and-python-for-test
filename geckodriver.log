@@ -1,0 +1,178 @@
+1536473916903	geckodriver	INFO	geckodriver 0.19.1
+1536473916923	geckodriver	INFO	Listening on 127.0.0.1:17555
+1536473919629	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.xHaKQW9grFH9"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536473921671	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 23840, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19772, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1536473925508	Marionette	INFO	Listening on port 17572
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536473925878	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536473925991	Marionette	DEBUG	Register listener.js for window 4294967297
+1536473926083	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536473926288	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536473926288	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536473926907	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536473927106	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536473927647	Marionette	DEBUG	Received DOM event "beforeunload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536473927749	Marionette	DEBUG	Received DOM event "pagehide" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536473927752	Marionette	DEBUG	Received DOM event "unload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+JavaScript warning: https://192.168.219.227:8099/csc/assets/lib/bootstrap-daterangepicker/daterangepicker.js, line 1210: unreachable code after return statement
+1536473928755	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.227:8099/csc/index.html;jsessionid=1sa8530mikglzati4nfxq0ou#pages/welcome/home"
+1536473928890	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.227:8099/csc/index.html;jsessionid=1sa8530mikglzati4nfxq0ou#pages/welcome/home"
+JavaScript warning: https://192.168.219.227:8099/csc/assets/lib/bootstrap-daterangepicker/daterangepicker.js, line 1210: unreachable code after return statement
+1536473929708	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.227:8099/csc/index.html#pages/welcome/home"
+1536473929727	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.227:8099/csc/index.html#pages/welcome/home"
+[Child 21512, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21512, ChromIPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1536474112286	geckodriver	INFO	geckodriver 0.19.1
+1536474112303	geckodriver	INFO	Listening on 127.0.0.1:18058
+1536474114955	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.1DDXgJvGHXz0"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536474116355	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 18476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18476, Chrome_CUnable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536474118930	Marionette	INFO	Listening on port 18072
+1536474119121	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536474119274	Marionette	DEBUG	Register listener.js for window 4294967297
+1536474119417	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536474119585	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536474119585	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536474120087	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474120281	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474120783	Marionette	DEBUG	Received DOM event "beforeunload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474120817	Marionette	DEBUG	Received DOM event "pagehide" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474120819	Marionette	DEBUG	Received DOM event "unload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536474121047	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474121219	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474141971	geckodriver	INFO	geckodriver 0.19.1
+1536474141990	geckodriver	INFO	Listening on 127.0.0.1:18193
+1536474144652	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.NqLvx6boIxZB"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536474145766	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 9564, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9564, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536474148440	Marionette	INFO	Listening on port 18207
+1536474148778	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536474148915	Marionette	DEBUG	Register listener.js for window 4294967297
+1536474149018	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536474149151	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536474149152	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536474149543	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474149731	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474150255	Marionette	DEBUG	Received DOM event "beforeunload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474150298	Marionette	DEBUG	Received DOM event "pagehide" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474150299	Marionette	DEBUG	Received DOM event "unload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536474150525	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536474150762	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475693397	geckodriver	INFO	geckodriver 0.19.1
+1536475693417	geckodriver	INFO	Listening on 127.0.0.1:21869
+1536475696139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.PUfPSj1TaNPg"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475697322	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475700101	Marionette	INFO	Listening on port 21885
+1536475700290	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536475700405	Marionette	DEBUG	Register listener.js for window 4294967297
+1536475700494	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536475700637	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536475700637	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536475701028	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475701258	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475701960	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1536475702865	geckodriver	INFO	geckodriver 0.19.1
+1536475702883	geckodriver	INFO	Listening on 127.0.0.1:21949
+1536475705554	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.qG6R5KHabpTx"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475706958	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475709842	Marionette	INFO	Listening on port 21963
+1536475710790	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536475710865	Marionette	DEBUG	Register listener.js for window 4294967297
+1536475710926	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536475711041	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536475711042	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536475711404	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475711587	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475712312	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1536475713184	geckodriver	INFO	geckodriver 0.19.1
+1536475713203	geckodriver	INFO	Listening on 127.0.0.1:22025
+1536475715874	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.QrdXYwbqVSaU"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475717248	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21880, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 21880, Chrome_ChildThread] WAUnable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475719701	Marionette	INFO	Listening on port 22039
+1536475720044	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536475720154	Marionette	DEBUG	Register listener.js for window 4294967297
+1536475720254	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536475720386	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536475720386	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536475720810	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475721028	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475721523	Marionette	DEBUG	Received DOM event "beforeunload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475721758	Marionette	DEBUG	Received DOM event "pagehide" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475721761	Marionette	DEBUG	Received DOM event "unload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+JavaScript warning: https://192.168.219.227:8099/csc/assets/lib/bootstrap-daterangepicker/daterangepicker.js, line 1210: unreachable code after return statement
+1536475722875	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.227:8099/csc/index.html;jsessionid=2mvxqkybzpgp1d1mvsv5e79k#pages/welcome/home"
+1536475723013	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.227:8099/csc/index.html;jsessionid=2mvxqkybzpgp1d1mvsv5e79k#pages/welcome/home"
+JavaScript warning: https://192.168.219.227:8099/csc/assets/lib/bootstrap-daterangepicker/daterangepicker.js, line 1210: unreachable code after return statement
+1536475723783	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.227:8099/csc/index.html#pages/welcome/home"
+1536475723788	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.227:8099/csc/index.html#pages/welcome/home"
+1536475724913	geckodriver	INFO	geckodriver 0.19.1
+1536475724932	geckodriver	INFO	Listening on 127.0.0.1:22109
+1536475727579	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\xin\\AppData\\Local\\Temp\\rust_mozprofile.w6kWQW4BSbbV"
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475728959	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+[Child 26048, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 26048, Chrome_ChUnable to read VR Path Registry from C:\Users\xin\AppData\Local\openvr\openvrpaths.vrpath
+1536475731721	Marionette	INFO	Listening on port 22128
+1536475732806	Marionette	WARN	TLS certificate errors will be ignored for this session
+1536475732887	Marionette	DEBUG	Register listener.js for window 4294967297
+1536475732947	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1536475733064	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1536475733065	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536475733421	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475733617	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475734145	Marionette	DEBUG	Received DOM event "beforeunload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475734196	Marionette	DEBUG	Received DOM event "pagehide" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475734197	Marionette	DEBUG	Received DOM event "unload" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+JavaScript warning: https://192.168.219.226/uap/js/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1536475734462	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
+1536475734645	Marionette	DEBUG	Received DOM event "pageshow" for "https://192.168.219.226/uap/login?service=https%3A%2F%2F192.168.219.227%3A8099%2Fcsc%2Findex.html"
