@@ -7,9 +7,9 @@ Project:基础类BasePage，封装所有页面都公用的方法，
 在初始化方法中定义驱动driver，基本url，title
 WebDriverWait提供了显式等待方式。
 '''
+import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 
 class BasePage(object):
@@ -45,8 +45,8 @@ class BasePage(object):
             # 确保元素是可见的。
             # 注意：以下入参本身是元组，不需要加*
             WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
-            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
-            self.driver.implicitly_wait(10)
+            # WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+            # self.driver.implicitly_wait(10)
             return self.driver.find_element(*loc)
             # 对定位到的元素进行高亮
             # self.driver.execute_script("arguments[0].style.border='3px solid red'", element)

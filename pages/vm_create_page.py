@@ -4,10 +4,11 @@ Created on 2018-9-9
 @author: wjx
 Project:云主机创建页面
 '''
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from pages.base_page import BasePage
-import time
+
 
 
 class VmCreatePage(BasePage):
