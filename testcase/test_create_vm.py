@@ -55,8 +55,6 @@ class CreateVM(unittest.TestCase):
         vmcreatepage.input_item('归属服务', 'zhh')
         # time.sleep(5)
 
-
-
     def tearDown(self):
         self.driver.close()
         # self.database.close()
