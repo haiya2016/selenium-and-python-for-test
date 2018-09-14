@@ -1,0 +1,53 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1536923228160" stop="1536923228161">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1536923228160" status="broken" stop="1536923228160">
+      <name>test_create_vm</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module 'E:\OneDrive\MYpy\winhong\CSC7\testcase\test_create_vm.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+testcase\test_create_vm.py:15: in &lt;module&gt;
+    from pages.login_page import LoginPage
+E   ModuleNotFoundError: No module named 'pages'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1536923228160" status="broken" stop="1536923228160">
+      <name>test_homepage</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module 'E:\OneDrive\MYpy\winhong\CSC7\testcase\test_homepage.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+testcase\test_homepage.py:14: in &lt;module&gt;
+    from pages.login_page import LoginPage
+E   ModuleNotFoundError: No module named 'pages'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+    <test-case start="1536923228160" status="broken" stop="1536923228161">
+      <name>test_login</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module 'E:\OneDrive\MYpy\winhong\CSC7\testcase\test_login.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+testcase\test_login.py:14: in &lt;module&gt;
+    from pages.login_page import LoginPage
+E   ModuleNotFoundError: No module named 'pages'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

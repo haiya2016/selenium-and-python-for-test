@@ -46,6 +46,7 @@ class CreateVM(unittest.TestCase):
         vm_page.open()
         # 填写归属服务
         vm_page.input_item('归属服务', 'zhh')
+        vm_page.input_item('云主机名称', 'python01')
         # time.sleep(5)
 
     def tearDown(self):

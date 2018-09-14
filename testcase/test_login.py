@@ -5,13 +5,13 @@ Created on 2018-9-9
 Project: 登录模块的测试用例
 '''
 import unittest
-import sys
-import os
+# import sys
+# import os
 from selenium import webdriver
 from parameterized import parameterized
 from BeautifulReport import BeautifulReport
-sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
-from login_page import LoginPage
+# sys.path.append(os.path.abspath(os.path.dirname(__file__)+'\\'+'..\\pages'))
+from pages.login_page import LoginPage
 
 
 
@@ -42,7 +42,7 @@ class LoginCSC(unittest.TestCase):
         login_page.input_password(password)
 
         if casename == 'ad_login':             # 是否切换Ad域登录
-            login_page.swich_usertype()
+            login_page.switch_usertype()
         login_page.click_submit()
 
         if login_page.on_page('WinCloud-CSC'):  # 判断登陆情况和tip信息
