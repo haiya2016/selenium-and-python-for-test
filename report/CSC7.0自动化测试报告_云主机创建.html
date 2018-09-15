@@ -7104,27 +7104,36 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 1,
+    "testPass": 0,
     "testResult": [
         {
             "className": "CreateVM",
             "methodName": "test_create_vm",
             "description": "切换数据中心",
-            "spendTime": "16.2 s",
-            "status": "成功",
+            "spendTime": "21.6 s",
+            "status": "失败",
             "log": [
-                "查找到按钮",
-                "进入查询界面",
-                "查询结束：",
-                ""
+                "打开网页： https://192.168.219.227:8099/csc/index.html\n定位元素： name username\n定位元素： name password\n定位元素： id adUser\n定位元素： name submit\n打开网页： https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1\n定位元素： xpath //label[text()='云主机名称：']//..//input\n定位元素： xpath //label[text()='VM Name：']//..//input\n定位元素： xpath //form/div[2]/div[3]/div/div/input\n定位元素： xpath //button[@data-bind='click: addService']\n定位元素： xpath //span[text()='服务名称']/../input\n定位元素： xpath //*[text()='搜索']\n定位元素： xpath //tbody/tr[2]//span\n定位元素： xpath //button[text()='确定']\n定位元素： xpath //button[@data-bind='click: addVdc']\n定位元素： xpath //span[text()='VDC名称']/../input\n定位元素： xpath //*[text()='搜索']\n定位元素： xpath //tbody/tr[2]//span\n定位元素： xpath //button[@data-bind='click: showUser']\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"E:\\OneDrive\\MYpy\\winhong\\CSC7\\testcase\\test_create_vm.py\", line 67, in test_create_vm\n    vm_page.input_item(item, input_items[item])\n",
+                "  File \"E:\\OneDrive\\MYpy\\winhong\\CSC7\\pages\\vm_create_page.py\", line 175, in input_item\n    self.item_click(item_type, item_value)\n",
+                "  File \"E:\\OneDrive\\MYpy\\winhong\\CSC7\\pages\\vm_create_page.py\", line 116, in item_click\n    self.search_for(item_type, item_value)\n",
+                "  File \"E:\\OneDrive\\MYpy\\winhong\\CSC7\\pages\\vm_create_page.py\", line 88, in search_for\n    self.find_element(*self.user_loc).click()\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 80, in click\n    self._execute(Command.CLICK_ELEMENT)\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 628, in _execute\n    return self._parent.execute(command, params)\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+                "selenium.common.exceptions.WebDriverException: Message: unknown error: Element <button class=\"btn btn-default\" type=\"button\" data-toggle=\"modal\" data-target=\".select_user\" data-bind=\"click: showUser\">...</button> is not clickable at point (1244, 272). Other element would receive the click: <div class=\"modal fade select_VDC in\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\" style=\"display: block; padding-right: 17px;\" data-bind=\"modal: { show: isAddVdc}\">...</div>\n  (Session info: chrome=69.0.3497.92)\n  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)\n\n"
             ]
         }
     ],
     "testName": "云主机创建模块测试报告",
     "testAll": 1,
-    "testFail": 0,
-    "beginTime": "2018-09-14 23:20:33",
-    "totalTime": "17s",
+    "testFail": 1,
+    "beginTime": "2018-09-15 15:52:09",
+    "totalTime": "22s",
     "testSkip": 0,
     "testError": 0
 };

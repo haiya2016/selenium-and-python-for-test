@@ -7,7 +7,7 @@ Project: 首页模块的测试用例
 import unittest
 # import sys
 # import os
-# import time
+import time
 # import pymysql
 from selenium import webdriver
 from BeautifulReport import BeautifulReport
@@ -44,10 +44,28 @@ class CreateVM(unittest.TestCase):
         # 使用已登录的浏览器生成一个已登录的云主机创建页面的对象
         vm_page = VmCreatePage(self.login_driver, self.create_vm_url)
         vm_page.open()
-        # 填写归属服务
-        vm_page.input_item('归属服务', 'zhh')
-        vm_page.input_item('云主机名称', 'python01')
-        # time.sleep(5)
+        # 设置需要填写的值
+        input_items ={
+            '云主机名称':'python01',
+            'VM Name':'python01',
+            'Hostname':'python01',
+            '归属服务':'zhh',
+            '归属VDC':'zhhvdca',
+            '归属用户':'admin',
+            '到期时间':'2019-01-01',
+            '备注':'自动化创建的云主机',
+            '可用分区':'AZ-Winserver 虚拟化:WinServer',
+            '镜像':'win2012',
+            '宿主机':'192.168.206.76',
+            '存储池':'Local storage(192.168.206.76)',
+            'CPU':'1',
+            '内存':'1',
+            '系统盘':'',
+            'IP池':'208',
+        }
+        for item in input_items:
+            vm_page.input_item(item, input_items[item])
+        time.sleep(5)
 
     def tearDown(self):
         self.driver.close()

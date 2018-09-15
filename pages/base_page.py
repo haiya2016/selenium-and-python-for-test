@@ -30,6 +30,7 @@ class BasePage(object):
         '''打开页面，并校验页面链接是否加载正确
         以单下划线_开头的方法，在使用import *时，该方法不会被导入，保证该方法为类私有的。'''
         self.driver.get(url)
+        print('打开网页：', url)
         # time.sleep(3)
         # self.driver.implicitly_wait(10)
         # self.driver.set_page_load_timeout(60)
@@ -48,6 +49,7 @@ class BasePage(object):
             WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
             # WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
             # self.driver.implicitly_wait(10)
+            print('定位元素：', *loc)
             return self.driver.find_element(*loc)
             # 对定位到的元素进行高亮
             # self.driver.execute_script("arguments[0].style.border='3px solid red'", element)
@@ -55,10 +57,12 @@ class BasePage(object):
         except AttributeError:
             print("%s 页面中未能找到 %s 元素" %(self, loc))
 
-    def switch_frame(self, loc):
+    def switch_frame(self, *loc):
         '''重写switch_to_frame方法'''
-        return self.driver.switch_to_frame(loc)
+        print('切换到ifram框架：', *loc)
+        return self.driver.switch_to_frame(*loc)
 
     def script(self, src):
         '''定义script方法，用于执行js脚本，范围执行结果'''
+        print('执行js脚本：', src)
         self.driver.execute_script(src)
