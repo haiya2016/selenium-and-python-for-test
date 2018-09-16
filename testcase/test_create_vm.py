@@ -30,7 +30,7 @@ class CreateVM(unittest.TestCase):
         self.driver.set_page_load_timeout(60)
         self.driver.set_window_size(1366, 768)
         # 调用LoginPage的类方法，直接获取一个已登录的浏览器
-        self.login_driver = LoginPage.login(self.driver, self.url, 'wjx', 'Admin123', 'ad')
+        self.login_driver = LoginPage.login(self.driver, self.url, 'admin', '1234567890')
         # self.database = pymysql.connect(
         #     host='192.168.219.227',
         #     port=3306,
@@ -45,13 +45,15 @@ class CreateVM(unittest.TestCase):
         vm_page = VmCreatePage(self.login_driver, self.create_vm_url)
         vm_page.open()
         # 设置需要填写的值
-        input_items ={
+        input_items = {
             '云主机名称':'python01',
             'VM Name':'python01',
             'Hostname':'python01',
             '归属服务':'zhh',
             '归属VDC':'zhhvdca',
             '归属用户':'admin',
+            '业务系统':'',
+            '应用集群':'',
             '到期时间':'2019-01-01',
             '备注':'自动化创建的云主机',
             '可用分区':'AZ-Winserver 虚拟化:WinServer',
@@ -65,6 +67,7 @@ class CreateVM(unittest.TestCase):
         }
         for item in input_items:
             vm_page.input_item(item, input_items[item])
+            # time.sleep(2)
         time.sleep(5)
 
     def tearDown(self):

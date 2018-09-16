@@ -1,0 +1,210 @@
+﻿2018-09-16 23:15:20,963 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:15:22,722 - login_page - input_username - 基本操作 - INFO - 输入用户名：admin
+2018-09-16 23:15:22,722 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'username')
+2018-09-16 23:15:22,937 - login_page - input_password - 基本操作 - INFO - 输入密码：1234567890
+2018-09-16 23:15:22,938 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'password')
+2018-09-16 23:15:23,135 - login_page - click_submit - 基本操作 - INFO - 点击登录按钮
+2018-09-16 23:15:23,136 - base_page - find_element - 基本操作 - INFO - 查找元素:('name', 'submit')
+2018-09-16 23:15:25,071 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span')
+2018-09-16 23:15:25,460 - login_page - login - 登录 - INFO - 登录成功
+2018-09-16 23:15:25,462 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:15:26,387 - vm_create_page - input_item - 云主机创建 - INFO - 填写到云主机名称的值为：python01
+2018-09-16 23:15:26,389 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input")
+2018-09-16 23:15:29,323 - vm_create_page - input_item - 云主机创建 - INFO - 填写到VM Name的值为：python01
+2018-09-16 23:15:29,324 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='VM Name：']//..//input")
+2018-09-16 23:15:31,663 - vm_create_page - input_item - 云主机创建 - INFO - 填写到Hostname的值为：python01
+2018-09-16 23:15:31,666 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input')
+2018-09-16 23:15:34,073 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属服务的值为：zhh
+2018-09-16 23:15:34,074 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属服务之后进行选择
+2018-09-16 23:15:34,077 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: addService']")
+2018-09-16 23:15:36,421 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='服务名称']/../input")
+2018-09-16 23:15:36,693 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:36,989 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:37,283 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确定']")
+2018-09-16 23:15:39,643 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属VDC的值为：zhhvdca
+2018-09-16 23:15:39,644 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属VDC之后进行选择
+2018-09-16 23:15:39,646 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: addVdc']")
+2018-09-16 23:15:41,906 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='VDC名称']/../input")
+2018-09-16 23:15:42,208 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:42,392 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:42,638 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']")
+2018-09-16 23:15:45,031 - vm_create_page - input_item - 云主机创建 - INFO - 填写到归属用户的值为：admin
+2018-09-16 23:15:45,033 - vm_create_page - search_for - 云主机创建 - INFO - 搜索归属用户之后进行选择
+2018-09-16 23:15:45,035 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: showUser']")
+2018-09-16 23:15:47,400 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='账号']/../input")
+2018-09-16 23:15:47,661 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:15:47,873 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:15:48,168 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']")
+2018-09-16 23:15:50,540 - vm_create_page - input_item - 云主机创建 - INFO - 填写到业务系统的值为：
+2018-09-16 23:15:50,541 - vm_create_page - search_for - 云主机创建 - INFO - 搜索业务系统之后进行选择
+2018-09-16 23:15:52,543 - vm_create_page - input_item - 云主机创建 - INFO - 填写到应用集群的值为：
+2018-09-16 23:15:52,544 - vm_create_page - search_for - 云主机创建 - INFO - 搜索应用集群之后进行选择
+2018-09-16 23:15:54,546 - vm_create_page - input_item - 云主机创建 - INFO - 填写到到期时间的值为：2019-01-01
+2018-09-16 23:15:54,548 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span")
+2018-09-16 23:15:54,727 - base_page - find_element - 基本操作 - INFO - 查找元素:('id', 'resource_instance_vm_limit_option3')
+2018-09-16 23:15:54,993 - base_page - find_element - 基本操作 - INFO - 查找元素:('id', 'resource_instance_vm_limit_option3')
+2018-09-16 23:15:55,451 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//textarea')
+2018-09-16 23:15:57,605 - vm_create_page - input_item - 云主机创建 - INFO - 填写到备注的值为：自动化创建的云主机
+2018-09-16 23:15:57,607 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//textarea')
+2018-09-16 23:15:59,839 - vm_create_page - input_item - 云主机创建 - INFO - 填写到可用分区的值为：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:15:59,841 - vm_create_page - item_select - 云主机创建 - INFO - 操作可用分区下拉框
+2018-09-16 23:15:59,842 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//label[text()='可用分区：']/..//select")
+2018-09-16 23:15:59,931 - vm_create_page - item_select - 云主机创建 - INFO - 根据选择值AZ-Winserver 虚拟化:WinServer对下拉框进行选择
+2018-09-16 23:16:02,160 - vm_create_page - input_item - 云主机创建 - INFO - 填写到镜像的值为：win2012
+2018-09-16 23:16:02,160 - vm_create_page - search_for - 云主机创建 - INFO - 搜索镜像之后进行选择
+2018-09-16 23:16:02,162 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']")
+2018-09-16 23:16:04,385 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='镜像名称']/../input")
+2018-09-16 23:16:04,714 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//*[text()='搜索']")
+2018-09-16 23:16:04,924 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', '//table//tr[2]/td[1]//span')
+2018-09-16 23:16:05,226 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']")
+2018-09-16 23:16:07,588 - vm_create_page - input_item - 云主机创建 - INFO - 填写到宿主机的值为：192.168.206.76
+2018-09-16 23:16:07,590 - vm_create_page - search_for - 云主机创建 - INFO - 搜索宿主机之后进行选择
+2018-09-16 23:16:07,592 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']")
+2018-09-16 23:16:09,789 - base_page - find_element - 基本操作 - INFO - 查找元素:('xpath', "//span[text()='IP地址']/../input")
+2018-09-16 23:16:20,326 - base_page - find_element - 基本操作 - ERROR - 定位超时：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 54, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-16 23:30:38,387 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:30:39,862 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-16 23:30:39,964 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'username') 成功！
+2018-09-16 23:30:40,132 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-16 23:30:40,196 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'password') 成功！
+2018-09-16 23:30:40,351 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-16 23:30:40,428 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'submit') 成功！
+2018-09-16 23:30:42,751 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span') 成功！
+2018-09-16 23:30:42,905 - [INFO] - 登录 - login - 登录成功
+2018-09-16 23:30:42,911 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:30:43,956 - [INFO] - 云主机创建 - input_item - 填写到云主机名称的值为：python01
+2018-09-16 23:30:44,465 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input") 成功！
+2018-09-16 23:30:47,143 - [INFO] - 云主机创建 - input_item - 填写到VM Name的值为：python01
+2018-09-16 23:30:47,202 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='VM Name：']//..//input") 成功！
+2018-09-16 23:30:49,574 - [INFO] - 云主机创建 - input_item - 填写到Hostname的值为：python01
+2018-09-16 23:30:49,634 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input') 成功！
+2018-09-16 23:30:52,010 - [INFO] - 云主机创建 - input_item - 填写到归属服务的值为：zhh
+2018-09-16 23:30:52,012 - [INFO] - 云主机创建 - search_for - 搜索归属服务之后进行选择
+2018-09-16 23:30:52,066 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addService']") 成功！
+2018-09-16 23:30:54,342 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='服务名称']/../input") 成功！
+2018-09-16 23:30:54,614 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:30:54,917 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:30:55,224 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确定']") 成功！
+2018-09-16 23:30:57,510 - [INFO] - 云主机创建 - input_item - 填写到归属VDC的值为：zhhvdca
+2018-09-16 23:30:57,511 - [INFO] - 云主机创建 - search_for - 搜索归属VDC之后进行选择
+2018-09-16 23:30:57,568 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addVdc']") 成功！
+2018-09-16 23:30:59,794 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='VDC名称']/../input") 成功！
+2018-09-16 23:31:00,119 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:00,327 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:00,587 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']") 成功！
+2018-09-16 23:31:02,883 - [INFO] - 云主机创建 - input_item - 填写到归属用户的值为：admin
+2018-09-16 23:31:02,885 - [INFO] - 云主机创建 - search_for - 搜索归属用户之后进行选择
+2018-09-16 23:31:02,952 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: showUser']") 成功！
+2018-09-16 23:31:05,319 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='账号']/../input") 成功！
+2018-09-16 23:31:05,626 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:05,862 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:06,132 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']") 成功！
+2018-09-16 23:31:08,398 - [INFO] - 云主机创建 - input_item - 填写到业务系统的值为：
+2018-09-16 23:31:08,401 - [INFO] - 云主机创建 - search_for - 搜索业务系统之后进行选择
+2018-09-16 23:31:10,403 - [INFO] - 云主机创建 - input_item - 填写到应用集群的值为：
+2018-09-16 23:31:10,404 - [INFO] - 云主机创建 - search_for - 搜索应用集群之后进行选择
+2018-09-16 23:31:12,407 - [INFO] - 云主机创建 - input_item - 填写到到期时间的值为：2019-01-01
+2018-09-16 23:31:12,466 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span") 成功！
+2018-09-16 23:31:12,688 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:31:12,901 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:31:13,401 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:31:15,511 - [INFO] - 云主机创建 - input_item - 填写到备注的值为：自动化创建的云主机
+2018-09-16 23:31:15,543 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:31:17,755 - [INFO] - 云主机创建 - input_item - 填写到可用分区的值为：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:31:17,756 - [INFO] - 云主机创建 - item_select - 操作可用分区下拉框
+2018-09-16 23:31:17,810 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='可用分区：']/..//select") 成功！
+2018-09-16 23:31:17,848 - [INFO] - 云主机创建 - item_select - 根据选择值AZ-Winserver 虚拟化:WinServer对下拉框进行选择
+2018-09-16 23:31:20,030 - [INFO] - 云主机创建 - input_item - 填写到镜像的值为：win2012
+2018-09-16 23:31:20,033 - [INFO] - 云主机创建 - search_for - 搜索镜像之后进行选择
+2018-09-16 23:31:20,093 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']") 成功！
+2018-09-16 23:31:22,321 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='镜像名称']/../input") 成功！
+2018-09-16 23:31:22,638 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:31:22,875 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:31:23,124 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']") 成功！
+2018-09-16 23:31:25,384 - [INFO] - 云主机创建 - input_item - 填写到宿主机的值为：192.168.206.76
+2018-09-16 23:31:25,385 - [INFO] - 云主机创建 - search_for - 搜索宿主机之后进行选择
+2018-09-16 23:31:25,457 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']") 成功！
+2018-09-16 23:31:38,133 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='IP地址']/../input")超时：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-16 23:40:14,502 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-16 23:40:15,899 - [INFO] - 基本操作 - input_username - 输入用户名：admin
+2018-09-16 23:40:15,978 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'username') 成功！
+2018-09-16 23:40:16,115 - [INFO] - 基本操作 - input_password - 输入密码：1234567890
+2018-09-16 23:40:16,169 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'password') 成功！
+2018-09-16 23:40:16,329 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-16 23:40:16,400 - [INFO] - 基本操作 - find_element - 查找元素:('name', 'submit') 成功！
+2018-09-16 23:40:18,608 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//*[@id="header"]/div[2]/ul/li[5]/a/span') 成功！
+2018-09-16 23:40:18,732 - [INFO] - 登录 - login - 登录成功
+2018-09-16 23:40:18,739 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-16 23:40:20,519 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-16 23:40:20,961 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='云主机名称：']//..//input") 成功！
+2018-09-16 23:40:23,582 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-16 23:40:23,682 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='VM Name：']//..//input") 成功！
+2018-09-16 23:40:26,102 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-16 23:40:26,170 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//form/div[2]/div[3]/div/div/input') 成功！
+2018-09-16 23:40:28,668 - [INFO] - 云主机创建 - input_item - 归属服务：zhh
+2018-09-16 23:40:28,670 - [INFO] - 云主机创建 - search_for - 搜索归属服务之后进行选择
+2018-09-16 23:40:28,722 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addService']") 成功！
+2018-09-16 23:40:30,984 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='服务名称']/../input") 成功！
+2018-09-16 23:40:31,299 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:32,163 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:32,393 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确定']") 成功！
+2018-09-16 23:40:34,713 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-16 23:40:34,714 - [INFO] - 云主机创建 - search_for - 搜索归属VDC之后进行选择
+2018-09-16 23:40:34,766 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: addVdc']") 成功！
+2018-09-16 23:40:37,009 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='VDC名称']/../input") 成功！
+2018-09-16 23:40:37,352 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:37,590 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:37,874 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: vdcSave']") 成功！
+2018-09-16 23:40:40,154 - [INFO] - 云主机创建 - input_item - 归属用户：admin
+2018-09-16 23:40:40,156 - [INFO] - 云主机创建 - search_for - 搜索归属用户之后进行选择
+2018-09-16 23:40:40,216 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: showUser']") 成功！
+2018-09-16 23:40:42,581 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='账号']/../input") 成功！
+2018-09-16 23:40:42,857 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:40:43,598 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:40:43,781 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: saveUsers']") 成功！
+2018-09-16 23:40:45,993 - [INFO] - 云主机创建 - input_item - 业务系统：
+2018-09-16 23:40:45,994 - [INFO] - 云主机创建 - search_for - 搜索业务系统之后进行选择
+2018-09-16 23:40:47,996 - [INFO] - 云主机创建 - input_item - 应用集群：
+2018-09-16 23:40:47,997 - [INFO] - 云主机创建 - search_for - 搜索应用集群之后进行选择
+2018-09-16 23:40:49,998 - [INFO] - 云主机创建 - input_item - 到期时间：2019-01-01
+2018-09-16 23:40:50,062 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[@id='inlineRadio3']//..//span") 成功！
+2018-09-16 23:40:50,333 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:40:50,560 - [INFO] - 基本操作 - find_element - 查找元素:('id', 'resource_instance_vm_limit_option3') 成功！
+2018-09-16 23:40:51,034 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:40:53,124 - [INFO] - 云主机创建 - input_item - 备注：自动化创建的云主机
+2018-09-16 23:40:53,156 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//textarea') 成功！
+2018-09-16 23:40:55,344 - [INFO] - 云主机创建 - input_item - 可用分区：AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:40:55,399 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//label[text()='可用分区：']/..//select") 成功！
+2018-09-16 23:40:55,444 - [INFO] - 云主机创建 - item_select - 下拉可用分区，选择AZ-Winserver 虚拟化:WinServer
+2018-09-16 23:40:57,650 - [INFO] - 云主机创建 - input_item - 镜像：win2012
+2018-09-16 23:40:57,652 - [INFO] - 云主机创建 - search_for - 搜索镜像之后进行选择
+2018-09-16 23:40:57,724 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click:$root.addImage']") 成功！
+2018-09-16 23:40:59,958 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//span[text()='镜像名称']/../input") 成功！
+2018-09-16 23:41:00,350 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//*[text()='搜索']") 成功！
+2018-09-16 23:41:00,573 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', '//table//tr[2]/td[1]//span') 成功！
+2018-09-16 23:41:00,824 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[text()='确认' and @data-bind='click: imageSave']") 成功！
+2018-09-16 23:41:03,092 - [INFO] - 云主机创建 - input_item - 宿主机：192.168.206.76
+2018-09-16 23:41:03,095 - [INFO] - 云主机创建 - search_for - 搜索宿主机之后进行选择
+2018-09-16 23:41:03,153 - [INFO] - 基本操作 - find_element - 查找元素:('xpath', "//button[@data-bind='click: $root.addHost']") 成功！
+2018-09-16 23:41:15,860 - [ERROR] - 基本操作 - find_element - 定位('xpath', "//span[text()='IP地址']/../input")时发生异常：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 53, in find_element
+    WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

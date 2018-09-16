@@ -7104,15 +7104,20 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 4,
+    "testPass": 3,
     "testResult": [
         {
             "className": "LoginCSC",
             "methodName": "test_login_csc_0_user_null",
             "description": "测试使用不同的账号密码组合进行登陆测试 [with casename='user_null', username='', password='password', asserts='账号不能为空！']\n        ",
-            "spendTime": "7.73 s",
+            "spendTime": "9.14 s",
             "status": "成功",
             "log": [
+                "2018-09-16 22:46:06,836 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html",
+                "2018-09-16 22:46:08,357 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'username')",
+                "2018-09-16 22:46:08,527 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'password')",
+                "2018-09-16 22:46:08,725 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'submit')",
+                "2018-09-16 22:46:08,899 - base_page - find_element - 基本操作 - INFO - 查找元素:：('xpath', '//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]')",
                 ""
             ]
         },
@@ -7120,9 +7125,14 @@ body.skin-3 {
             "className": "LoginCSC",
             "methodName": "test_login_csc_1_pwd_null",
             "description": "测试使用不同的账号密码组合进行登陆测试 [with casename='pwd_null', username='admin', password='', asserts='密码不能为空！']\n        ",
-            "spendTime": "8.12 s",
+            "spendTime": "9.14 s",
             "status": "成功",
             "log": [
+                "2018-09-16 22:46:15,813 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html",
+                "2018-09-16 22:46:17,274 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'username')",
+                "2018-09-16 22:46:17,541 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'password')",
+                "2018-09-16 22:46:17,706 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'submit')",
+                "2018-09-16 22:46:17,966 - base_page - find_element - 基本操作 - INFO - 查找元素:：('xpath', '//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]')",
                 ""
             ]
         },
@@ -7130,9 +7140,14 @@ body.skin-3 {
             "className": "LoginCSC",
             "methodName": "test_login_csc_2_local_login",
             "description": "测试使用不同的账号密码组合进行登陆测试 [with casename='local_login', username='admin', password='1234567890', asserts='admin']\n        ",
-            "spendTime": "9.38 s",
+            "spendTime": "11.0 s",
             "status": "成功",
             "log": [
+                "2018-09-16 22:46:24,980 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html",
+                "2018-09-16 22:46:26,280 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'username')",
+                "2018-09-16 22:46:26,536 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'password')",
+                "2018-09-16 22:46:26,739 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'submit')",
+                "2018-09-16 22:46:28,729 - base_page - find_element - 基本操作 - INFO - 查找元素:：('xpath', '//*[@id=\"header\"]/div[2]/ul/li[5]/a/span')",
                 ""
             ]
         },
@@ -7140,18 +7155,27 @@ body.skin-3 {
             "className": "LoginCSC",
             "methodName": "test_login_csc_3_ad_login",
             "description": "测试使用不同的账号密码组合进行登陆测试 [with casename='ad_login', username='wjx', password='Admin123', asserts='wjx']\n        ",
-            "spendTime": "9.49 s",
-            "status": "成功",
+            "spendTime": "29.7 s",
+            "status": "失败",
             "log": [
-                ""
+                "2018-09-16 22:46:36,099 - base_page - open - 基本操作 - INFO - 打开页面：https://192.168.219.227:8099/csc/index.html\n2018-09-16 22:46:37,429 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'username')\n2018-09-16 22:46:37,636 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'password')\n2018-09-16 22:46:37,827 - base_page - find_element - 基本操作 - INFO - 查找元素:：('id', 'adUser')\n2018-09-16 22:46:37,977 - base_page - find_element - 基本操作 - INFO - 查找元素:：('name', 'submit')\n2018-09-16 22:46:58,648 - base_page - find_element - 基本操作 - INFO - 查找元素:：('xpath', '//*[@id=\"cas\"]/div/div[1]/div/div[2]/div[2]/div[3]')\n",
+                "Traceback (most recent call last):\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\parameterized\\parameterized.py\", line 392, in standalone_func\n    return func(*(a + p.args), **p.kwargs)\n",
+                "  File \"E:\\OneDrive\\MYpy\\winhong\\CSC7\\testcase\\test_login.py\", line 51, in test_login_csc\n    self.assertEqual(login_page.show_msg(), asserts, \"提示语与预期不一致\")\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 1203, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n",
+                "  File \"C:\\Users\\xin\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 670, in fail\n    raise self.failureException(msg)\n",
+                "AssertionError: 'AD域连接失败！' != 'wjx'\n- AD域连接失败！\n+ wjx\n : 提示语与预期不一致\n"
             ]
         }
     ],
     "testName": "登录模块测试报告",
     "testAll": 4,
-    "testFail": 0,
-    "beginTime": "2018-09-14 15:19:57",
-    "totalTime": "35s",
+    "testFail": 1,
+    "beginTime": "2018-09-16 22:46:02",
+    "totalTime": "59s",
     "testSkip": 0,
     "testError": 0
 };
