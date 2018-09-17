@@ -45,11 +45,11 @@ class CreateVM(unittest.TestCase):
         vm_page = VmCreatePage(self.login_driver, self.create_vm_url)
         vm_page.open()
         # 设置需要填写的值
-        input_items = {
+        input_data = {
             '云主机名称':'python01',
             'VM Name':'python01',
             'Hostname':'python01',
-            '归属服务':'zhh',
+            '归属服务':'zhh2',
             '归属VDC':'zhhvdca',
             '归属用户':'admin',
             '业务系统':'',
@@ -65,8 +65,8 @@ class CreateVM(unittest.TestCase):
             '系统盘':'',
             'IP池':'208',
         }
-        for item in input_items:
-            vm_page.input_item(item, input_items[item])
+        for data in input_data:
+            vm_page.input_item(data, input_data[data])
             # time.sleep(2)
         time.sleep(5)
 

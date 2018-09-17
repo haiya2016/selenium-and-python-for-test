@@ -52,27 +52,35 @@ class VmCreatePage(BasePage):
     memory_loc = (By.ID, 'resource_instance_memory')
     sysdisk_loc = (By.ID, "storage_input_id")
     ip_pool_loc = (By.ID, 'create_vm_ip_pool_id')
+
     # 服务选择页面
     service_search_input_loc = (By.XPATH, "//span[text()='服务名称']/../input")         # 服务搜索输入框
     service_confirm_loc = (By.XPATH, "//button[text()='确定']")                 # 确定按钮
+
     # VDC选择页面
     vdc_search_input_loc = (By.XPATH, "//span[text()='VDC名称']/../input")
     vdc_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click: vdcSave']")
+
     # 归属用户选择页面
     user_search_input_loc = (By.XPATH, "//span[text()='账号']/../input")
     user_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click: saveUsers']")
+
     # 业务系统选择页面
     bussys_search_input_loc = (By.XPATH, "//span[text()='业务系统名称']/../input")
     bussys_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click: busSysSave']")
+
     # 应用集群选择页面
     busitem_search_input_loc = (By.XPATH, "//span[text()='应用集群名称']/../input")
     busitem_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click: busItemSave']")
+
     # 镜像选择页面
     image_search_input_loc = (By.XPATH, "//span[text()='镜像名称']/../input")
     image_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click: imageSave']")
+
     # 宿主机选择页面(通过IP)
     host_search_input_loc = (By.XPATH, "//span[text()='IP地址']/../input")
     host_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click:hostSave']")
+
     # 存储池选择页面
     storage_pool_search_input_loc = (By.XPATH, "//span[text()='存储池名称']/../input")
     storage_pool_confirm_loc = (By.XPATH, "//button[text()='确认' and @data-bind='click:storagePoolSave']")
@@ -85,47 +93,53 @@ class VmCreatePage(BasePage):
         :param item_value: 组件值
         :return
         '''
-        self.vclog.info(f'搜索{item_type}：{item_value}')
+        self.vclog.info(f'{item_type}：{item_value}')
         if item_type == '归属服务':
-            self.find_element(*self.service_loc).click()
+            self.click_element(*self.service_loc)
             time.sleep(2)
             self.find_element(*self.service_search_input_loc).send_keys(item_value)
         elif item_type == '归属VDC':
-            self.find_element(*self.vdc_loc).click()
+            self.click_element(*self.vdc_loc)
             time.sleep(2)
             self.find_element(*self.vdc_search_input_loc).send_keys(item_value)
         elif item_type == '归属用户':
-            self.find_element(*self.user_loc).click()
+            self.click_element(*self.user_loc)
             time.sleep(2)
             self.find_element(*self.user_search_input_loc).send_keys(item_value)
         elif item_type == '业务系统':
             if item_value:             # 非必填，有传值才进行操作
-                self.find_element(*self.bussys_loc).click()
+                self.click_element(*self.bussys_loc)
                 time.sleep(2)
                 self.find_element(*self.bussys_search_input_loc).send_keys(item_value)
             else:
                 return True
         elif item_type == '应用集群':
             if item_value:             # 非必填，有传值才进行操作
-                self.find_element(*self.busitem_loc).click()
+                self.click_element(*self.busitem_loc)
                 time.sleep(2)
                 self.find_element(*self.busitem_search_input_loc).send_keys(item_value)
             else:
                 return True
         elif item_type == '镜像':
-            self.find_element(*self.image_loc).click()
+            self.click_element(*self.image_loc)
             time.sleep(2)
             self.find_element(*self.image_search_input_loc).send_keys(item_value)
         elif item_type == '宿主机':
-            self.find_element(*self.host_loc).click()
+            self.click_element(*self.host_loc)
             time.sleep(2)
             self.find_element(*self.host_search_input_loc).send_keys(item_value)
         elif item_type == '存储池':
-            self.find_element(*self.storage_pool_loc).click()
+            self.click_element(*self.storage_pool_loc)
             time.sleep(2)
             self.find_element(*self.storage_pool_search_input_loc).send_keys(item_value)
-        self.find_element(*self.search_button_loc).click()           # 点击搜索按钮
-        self.find_element(*self.first_search_result_loc).click()     # 勾选第一个搜索结果
+        self.vclog.info('点击搜索按钮')    
+        self.click_element(*self.search_button_loc)         # 点击搜索按钮
+        self.vclog.info('勾选第一个搜索结果')
+        try:
+            self.click_element(*self.first_search_result_loc)    # 勾选第一个搜索结果
+        except Exception as err:
+            self.vclog.warning(f'搜索不到对应结果')
+        
 
 
     def item_click(self, item_type, item_value):
@@ -135,23 +149,23 @@ class VmCreatePage(BasePage):
         :return'''
         self.search_for(item_type, item_value)
         if item_type == '归属服务':
-            self.find_element(*self.service_confirm_loc).click()
+            self.click_element(*self.service_confirm_loc)
         elif item_type == '归属VDC':
-            self.find_element(*self.vdc_confirm_loc).click()
+            self.click_element(*self.vdc_confirm_loc)
         elif item_type == '归属用户':
-            self.find_element(*self.user_confirm_loc).click()
+            self.click_element(*self.user_confirm_loc)
         elif item_type == '业务系统':
             if item_value:
-                self.find_element(*self.bussys_confirm_loc).click()
+                self.click_element(*self.bussys_confirm_loc)
         elif item_type == '应用集群':
             if item_value:
-                self.find_element(*self.busitem_confirm_loc).click()
+                self.click_element(*self.busitem_confirm_loc)
         elif item_type == '镜像':
-            self.find_element(*self.image_confirm_loc).click()
+            self.click_element(*self.image_confirm_loc)
         elif item_type == '宿主机':
-            self.find_element(*self.host_confirm_loc).click()
+            self.click_element(*self.host_confirm_loc)
         elif item_type == '存储池':
-            self.find_element(*self.storage_pool_confirm_loc).click()
+            self.click_element(*self.storage_pool_confirm_loc)
 
 
     def item_select(self, item_type, item_value):
@@ -192,15 +206,15 @@ class VmCreatePage(BasePage):
                 self.find_element(*self.sysdisk_loc).send_keys(item_value)
         elif item_type == '到期时间':
             if item_value == '永久':
-                self.find_element(*self.applytime_datefor_loc).click()
+                self.click_element(*self.applytime_datefor_loc)
             elif '年' in item_value or '月' in item_value:
-                self.find_element(*self.applytime_time_loc).click()
+                self.click_element(*self.applytime_time_loc)
                 self.item_select(item_type, item_value)
             else:
-                self.find_element(*self.applytime_date_loc).click()
+                self.click_element(*self.applytime_date_loc)
                 self.find_element(*self.applytime_datefor_loc).clear()
                 self.find_element(*self.applytime_datefor_loc).send_keys(item_value)
-                self.find_element(*self.textarea_input_loc).click()     # 用于取消日历控件
+                self.click_element(*self.textarea_input_loc)      # 用于取消日历控件
         elif item_type in ['可用分区', 'CPU', '内存', 'IP池']:     # 需要下拉选择的控件
             self.item_select(item_type, item_value)
         else:       # 需要搜索的控件

@@ -10,7 +10,7 @@ WebDriverWait提供了显式等待方式。
 # import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+# from selenium.common.exceptions import TimeoutException
 from config.logging_sys import Logger
 
 
@@ -46,7 +46,7 @@ class BasePage(object):
         self._open(self.base_url)
 
     def find_element(self, *loc):
-        '''重写元素定位方法'''      
+        '''重写元素定位方法'''
         try:
             # 确保元素是可见的。
             # 注意：入参本身是元组，不需要加*
@@ -59,9 +59,20 @@ class BasePage(object):
             # self.log.error(f'定位{loc}超时：{errmsg}', exc_info=True)
         except Exception as allerr:
             self.log.exception(f'定位{loc}时发生异常：{allerr}')
-        else:
-            self.log.info(f'查找元素:{loc} 成功！')
+            raise Exception
+        # else:
+            # self.log.info(f'查找元素:{loc} 成功！')
         return self.driver.find_element(*loc)
+
+    def click_element(self, *loc):
+        '''重写元素点击方法，增加是否可点击的判断'''
+        try:
+            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+        except Exception as allerr:
+            self.log.exception(f'元素{loc}无法点击：{allerr}')
+            raise Exception
+        else:
+            self.find_element(*loc).click()
 
     def switch_frame(self, *loc):
         '''重写switch_to_frame方法'''

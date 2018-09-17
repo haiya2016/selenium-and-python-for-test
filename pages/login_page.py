@@ -28,18 +28,18 @@ class LoginPage(BasePage):
     # 操作
     def input_username(self, username):
         '''输入用户名'''
-        self.log.info(f'输入用户名：{username}')
+        self.log.info(f'{username}')
         self.find_element(*self.username_loc).send_keys(username)
 
     def input_password(self, password):
         '''输入密码'''
-        self.log.info(f'输入密码：{password}')
+        self.log.info(f'{password}')
         self.find_element(*self.password_loc).send_keys(password)
 
     def click_submit(self):
         '''点击登录'''
         self.log.info('点击登录按钮')
-        self.find_element(*self.submit_loc).click()
+        self.click_element(*self.submit_loc)
 
     def show_msg(self):
         '''用户名或密码不合理时Tip框内容展示'''
@@ -50,11 +50,12 @@ class LoginPage(BasePage):
     def switch_usertype(self):
         '''切换为AD用户登陆'''
         self.log.info('切换为AD用户登陆')
-        self.find_element(*self.usertype_ad_loc).click()
+        self.click_element(*self.usertype_ad_loc)
+        # self.find_element(*self.usertype_ad_loc).click()
 
-    def show_userid(self):
-        '''登录成功页面中的用户ID查找'''
-        return self.find_element(*self.userid_loc).text
+    def show_userid(self, username):
+        '''登录成功页面判断用户id是否相同'''
+        return self.find_element(*self.userid_loc).text == username
 
 
     @classmethod
@@ -69,7 +70,7 @@ class LoginPage(BasePage):
         if usertype != '本地':
             login.switch_usertype()
         login.click_submit()
-        if username == cls.show_userid(login):
+        if cls.show_userid(login, username):
             cls.log.info('登录成功')
         else:
             raise AssertionError
