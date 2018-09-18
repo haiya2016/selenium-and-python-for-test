@@ -359,3 +359,27 @@ selenium.common.exceptions.TimeoutException: Message:
 2018-09-17 15:11:52,579 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
 2018-09-17 15:11:54,789 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
 2018-09-17 15:11:54,790 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca
+2018-09-17 15:34:16,662 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html
+2018-09-17 15:34:17,654 - [INFO] - 基本操作 - input_username - admin
+2018-09-17 15:34:17,819 - [INFO] - 基本操作 - input_password - 1234567890
+2018-09-17 15:34:17,969 - [INFO] - 基本操作 - click_submit - 点击登录按钮
+2018-09-17 15:34:19,616 - [INFO] - 登录 - login - 登录成功
+2018-09-17 15:34:19,621 - [INFO] - 基本操作 - open - 打开页面：https://192.168.219.227:8099/csc/index.html#pages/resources/instances/vms/vm_create?previousPage=1
+2018-09-17 15:34:20,346 - [INFO] - 云主机创建 - input_item - 云主机名称：python01
+2018-09-17 15:34:23,112 - [INFO] - 云主机创建 - input_item - VM Name：python01
+2018-09-17 15:34:25,438 - [INFO] - 云主机创建 - input_item - Hostname：python01
+2018-09-17 15:34:27,744 - [INFO] - 云主机创建 - input_item - 归属服务：zhh2
+2018-09-17 15:34:27,745 - [INFO] - 云主机创建 - search_for - 归属服务：zhh2
+2018-09-17 15:34:30,253 - [INFO] - 云主机创建 - search_for - 点击搜索按钮
+2018-09-17 15:34:30,510 - [INFO] - 云主机创建 - search_for - 勾选第一个搜索结果
+2018-09-17 15:34:41,071 - [ERROR] - 基本操作 - click_element - 元素('xpath', '//table//tr[2]/td[1]//span')无法点击：Message: 
+Traceback (most recent call last):
+  File "E:\OneDrive\MYpy\winhong\CSC7\pages\base_page.py", line 70, in click_element
+    WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+  File "C:\Users\xin\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2018-09-17 15:34:41,073 - [WARNING] - 云主机创建 - search_for - 搜索不到对应结果
+2018-09-17 15:34:43,259 - [INFO] - 云主机创建 - input_item - 归属VDC：zhhvdca
+2018-09-17 15:34:43,260 - [INFO] - 云主机创建 - search_for - 归属VDC：zhhvdca

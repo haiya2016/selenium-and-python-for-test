@@ -7,7 +7,7 @@
 .classpath
 .project
 .settings
- ##filter databfile、sln file##
+## filter databfile、sln file##
 *.mdb
 *.ldb
 *.sln
